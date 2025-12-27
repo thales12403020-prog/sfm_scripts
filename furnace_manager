@@ -1,0 +1,14 @@
+every 20 ticks do
+input 1 coal from chest_input
+output to furnace EAST SIDE
+end
+
+every 20 ticks do
+INPUT 10 WITH #forge:ores FROM chest_input
+output to furnace TOP SIDE
+end
+
+every 20 ticks do
+input 1 from furnace bottom side
+output to chest_output
+end
