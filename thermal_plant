@@ -1,14 +1,14 @@
 every 20 ticks do
-input from tankwater
-output to thermal EAST SIDE
+input from CoalInput bottom side
+output to each Heater top side
 end
 
 every 20 ticks do
-INPUT 10 WITH #forge:ores FROM chest_input
-output to furnace TOP SIDE
+input 1000 fluid::water from TankWater SOUTH SIDE
+output 1000 fluid::water to each ThermalPlant BOTTOM SIDE
 end
 
 every 20 ticks do
-input 1 from furnace bottom side
-output to chest_output
+input fluid::brine from ThermalPlant TOP SIDE
+output fluid::brine to TankBrine SOUTH SIDE
 end
